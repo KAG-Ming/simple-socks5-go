@@ -1,19 +1,14 @@
-# simple-socks5-go
-A simple implementation of SOCKS5 server with Golang. Detailed explanation in my blog: https://blog.onirexus.com/posts/cs/go/simple-socks5-server-go/
+# simple-proxy-go
+
+A collection of minimalist network proxy servers in Go for educational purposes.
 
 ## Disclaimer
+This is a practice project and NOT production-grade software. It lacks robust error handling and may contain bugs. Do not use it in production.
 
-**This is a learning project, NOT a production-grade implementation.** It is intended solely for practicing network programming and understanding RFC 1928. It lacks robust error handling, secure encryption, comprehensive authentication, and may still contain bugs. Do not use it in a production environment.
+## Available Implementations
 
-## Features Covered
-
-- Protocol Version Validation (SOCKS5 only)
-- `NO AUTHENTICATION REQUIRED` method negotiation
-- `CONNECT` command handling
-- Destination address parsing for IPv4, IPv6, and Domain names
-- Concurrent full-duplex data forwarding using Goroutines
-
-## Quick Start
+### SOCKS5 (`/socks5`)
+A minimalist SOCKS5 proxy server. Detailed explanation in my blog: https://blog.onirexus.com/posts/cs/go/simple-socks5-server-go/
 ```bash
 go run server.go
 ```
